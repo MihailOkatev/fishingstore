@@ -123,6 +123,7 @@ ul {
 }
 .header-bottom__logo {
     margin-right: 31px;
+    display: block;
 }
 .search {
     box-sizing: border-box;
