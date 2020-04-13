@@ -202,3 +202,52 @@ ul {
     font-size: 16px;
     color: #009EE2;
 }
+
+.main-top {
+    background-color: #EFEFEF;
+    margin-top: 31px;
+}
+
+.main-top-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.catalogue-link {
+    background: linear-gradient(to right,#048AC3, #37BDEC);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 263px;
+    font-weight: 600;
+    color:#fff;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+
+}
+.main-menu {
+    display: flex;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+.main-menu__item {
+    margin-right: 90px;
+
+}
+.main-menu__item:last-child {
+    margin-right: 0;
+}
+.menu-item__link {
+    text-decoration: none;
+    font-size: 14px;
+    color:#1D1E1E;
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+}
+
+.menu-item__link:last-child {
+    margin-right: 0;
+}
