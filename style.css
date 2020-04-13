@@ -1,0 +1,146 @@
+/*ШРИФТЫ*/
+@font-face {
+    font-family: Panton;
+    src: url("./fonts/Panton-SemiBold.otf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Panton;
+    src: url("./fonts/Panton-Bold.otf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Panton;
+    src: url("./fonts/Panton-ExtraBold.otf");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Panton;
+    src: url("./fonts/Panton-Regular.otf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Panton;
+    src: url("./fonts/Panton-Black.otf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: Panton, serif;
+    font-weight: 400;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+.header {
+    min-width: 1200px;
+}
+
+.header-top {
+    background-color: #1D1E1E;
+    margin-bottom: 40px;
+
+}
+
+.header-top-menu {
+    display: flex;
+}
+
+.header-top-menu__item {
+    list-style-type: none;
+    margin-right: 68px;
+    font-size: 14px;
+    letter-spacing: 0.025em;
+
+}
+
+.top-menu__link {
+    text-decoration: none;
+    color: #FFFFFF;
+
+
+}
+
+.header-top-menu__item:last-child {
+    margin-right: 0;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-top_inner {
+    display: flex;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    justify-content: space-between;
+
+}
+
+.phone {
+    display: flex;
+}
+
+
+.phone__text {
+    color:#FFFFFF;
+    font-size: 13px;
+    letter-spacing: 0.025em;
+}
+.phone__number {
+    color: #009EE2;
+    font-family: Panton;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    font-size: 20px;
+    margin-left: 31px;
+
+}
+
+.header-bottom {
+    display: flex;
+}
+
+.search__field {
+    width: 556px;
+    box-sizing: border-box;
+    padding: 0 25px;
+    height: 42px;
+    border: 1px solid #DDDDDD;
+    background-image: url("./img/search.jpg");
+    background-position: right 19px center;
+    background-repeat: no-repeat;
+    margin-left: 31px;
+    font-family: Panton;
+}
+
+::placeholder {
+    font-size: 14px;
+    color: #1D1E1E;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
