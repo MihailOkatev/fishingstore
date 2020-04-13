@@ -123,6 +123,9 @@ ul {
 }
 .header-bottom__logo {
     margin-right: 31px;
+}
+
+.header-bottom__logo>img {
     display: block;
 }
 .search {
