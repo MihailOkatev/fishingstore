@@ -212,17 +212,31 @@ ul {
     display: flex;
     justify-content: space-between;
 }
-.catalogue-link {
-    background: linear-gradient(to right,#048AC3, #37BDEC);
+
+.main-top__catalog {
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 263px;
+    align-items: center;
+    background: linear-gradient(to right,#048AC3, #37BDEC);
+    justify-content: space-between;
+}
+
+.catalogue-activator {
+    width: 25px;
+    height: 18px;
+    background-image: url("./img/menu_activator.png");
+    background-size: 20px;
+    background-position: center;
+    margin-left: 17px;
+}
+
+.catalogue-link {
     font-weight: 600;
     color:#fff;
     font-size: 18px;
     letter-spacing: 0.05em;
-    text-decoration: none;
+    display: block;
+    padding-right: 54px;
 
 
 }
@@ -285,7 +299,6 @@ ul {
 .special-offer {
     background: linear-gradient(to right,#048AC3, #37BDEC);
     position: relative;
-    display: flex;
 
 
 }
@@ -340,4 +353,72 @@ ul {
     position: absolute;
     right: 83px;
     top: -21px;
+}
+
+.offer-cards {
+    display: flex;
+    margin-top: 29px;
+    justify-content: space-between;
+
+}
+
+.offer-cards__item {
+    width: 30.93%;
+    background: linear-gradient(to right,#048AC3, #37BDEC);
+
+
+}
+.offer-card__info {
+    width: 48.13%;
+    padding-left: 10.75%;
+
+
+}
+
+.offer-card__title {
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+
+}
+
+.offer-card__description {
+    color: #4CD2FE;
+}
+
+.offer-card__open {
+    background-image: url("./img/open_card.png");
+    width: 25px;
+    height: 25px;
+    background-size: 20px;
+    background-position: center;
+    display: block;
+    background-repeat: no-repeat;
+    padding-bottom: 21px;
+    margin-top: 11px;
+}
+
+.bait-card,.catalog-card,.expert-card {
+    position: relative;
+}
+
+.bait-img {
+    position: absolute;
+    top: -15px;
+    left: 120px;
+}
+
+.expert-img {
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+
+.cat-img {
+    position: absolute;
+    top: -7px;
+    left: 145px;
 }
