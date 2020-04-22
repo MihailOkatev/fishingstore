@@ -475,6 +475,9 @@ ul {
     background-image: url("./img/Rarrow.png");
 }
 
+.hits-cards {
+    display: flex;
+}
 .hit-card {
     width: 23.07%;
 }
@@ -498,4 +501,32 @@ ul {
     height: 20px;
     background-image: url("./img/star.png");
     background-repeat: no-repeat;
+}
+
+.actual-price {
+    color: #000;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.buy-btn {
+    display: block;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    width: 85.2%;
+    background: linear-gradient(to right, #3AC0EF, #0187C1);
+    text-decoration: none;
+
+}
+
+.photo {
+    object-fit: contain;
+}
+
+.hit-card__photo {
+    height: 199px;
 }
