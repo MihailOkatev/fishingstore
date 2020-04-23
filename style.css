@@ -50,6 +50,9 @@ ul {
     list-style-type: none;
 }
 
+button {
+    display: block;
+}
 
 .header {
     min-width: 1200px;
@@ -424,12 +427,12 @@ ul {
     left: 145px;
 }
 
-.hits__top {
+.section-top {
     display: flex;
     justify-content: space-between;
 }
 
-.hits__titleblock {
+.titleblock {
     display: flex;
 }
 
@@ -477,9 +480,21 @@ ul {
 
 .hits-cards {
     display: flex;
+    margin-top: 41.1px;
+    justify-content: space-between;
 }
 .hit-card {
-    width: 23.07%;
+    width: 23.073%;
+    box-shadow: 0 18px 21px #d6d6d6;
+}
+
+.hit-card__content {
+    width: 85.2%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 13px;
+    position: relative;
+
 }
 
 .hit-card__title span {
@@ -488,11 +503,13 @@ ul {
 
 .hit-card__title {
     font-weight: 600;
-    margin: 0;
+    margin: 0 0 5px;
 }
 
 .hit-card__stars {
     display: flex;
+    margin-top: 57px;
+    margin-bottom: 5px;
 }
 
 .star {
@@ -501,8 +518,16 @@ ul {
     height: 20px;
     background-image: url("./img/star.png");
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
+.star_unmarked {
+    background-image: url("./img/unmarked_star.png");
+}
+
+.hit-card__price {
+    margin-bottom: 27px;
+}
 .actual-price {
     color: #000;
     font-weight: 800;
@@ -512,21 +537,248 @@ ul {
 .buy-btn {
     display: block;
     text-transform: uppercase;
+    font-size: 16px;
     color: #FFFFFF;
     font-weight: 700;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 22px;
-    width: 85.2%;
     background: linear-gradient(to right, #3AC0EF, #0187C1);
     text-decoration: none;
+    margin: 0 auto;
+    width: 100%;
 
 }
 
 .photo {
-    object-fit: contain;
+    object-fit: none;
+    object-position: 50% 50%;
+    display: block;
+    height: 199px;
+    width: 100%;
+    outline: solid rebeccapurple 1px;
+    overflow-y: hidden;
+
+}
+
+.bestsell-card {
+    background-color: #009ee2;
+
+}
+
+.bestsell-card__title {
+    font-size: 33px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: 0.82px;
+    margin-left: 21px;
+    margin-top: 17px;
+    margin-bottom: 0;
+
+}
+
+.bestsell-card__subtitle {
+    width: 42.41%;
+    color: #4cd2fe;
+    line-height: 30px;
+    letter-spacing: 0.55px;
+    margin-left: 21px;
+    margin-top: 0;
+    margin-bottom: -49px;
+}
+
+.bestsell-card img {
+    display: block;
+    object-position: 7% 50%;
+    object-fit: none;
+    width: 100%;
+    height: 293px;
+}
+
+.bestsell-card__price {
+    font-size: 30px;
+    color: #FFFFFF;
+    display: block;
+    margin-left: 30px;
+
+}
+
+.profit {
+    display: block;
+    color: #00963F;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hit-card__photo::after {
+    content: "Хит";
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: 800;
+    position: absolute;
+    background: linear-gradient(to right, #3AC0EF, #0187C1);
+    top: 38px;
+    left: -20px;
+    display: block;
+    width: 58px;
+    padding-top: 12.6px;
+    padding-bottom: 10.4px;
+    text-transform: uppercase;
+    text-align: center;
+
 }
 
 .hit-card__photo {
-    height: 199px;
+    position: relative;
+}
+
+.new-goods {
+    margin-top: 137px;
+}
+
+.discount .hit-card__photo::before {
+    content: 'Скидка';
+    position: absolute;
+    display: block;
+    background-color: #00963F;
+    width: 83px;
+    text-transform: uppercase;
+    text-align: center;
+    top: 0;
+    left: 0;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: 800;
+
+}
+
+.sale {
+    position: relative;
+}
+
+.sale::after {
+    content: "-30%";
+    position: absolute;
+    font-size: 95px;
+    font-weight: 800;
+    color: #FFFFFF;
+    opacity: 0.22;
+    top: 0;
+    left: 0;
+
+}
+
+.last-news {
+    margin-top: 137px;
+}
+
+.last-news h2 {
+    margin-bottom: 53px;
+}
+
+.news__card {
+    width: 31.579%;
+    position: relative;
+
+
+}
+
+.news__title {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1D1E1E;
+    text-transform: uppercase;
+}
+
+.news__photo img {
+    object-fit: contain;
+}
+
+.news__photo {
+    height: 209px;
+}
+
+.news__text-content {
+    margin-left: 25px;
+    margin-right: 38px;
+    width: 78.61%;
+}
+
+.news__text {
+    font-size: 13px;
+    letter-spacing: 0.33px;
+    line-height: 22px;
+    color: #1d1e1e;;
+}
+
+.news__text-content .hits__link {
+    padding: 0;
+}
+
+.news__text {
+    margin-bottom: -12px;
+}
+
+.news__date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #1D1E1E;
+    width: 98px;
+    text-align: center;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__card {
+    box-shadow: 0 18px 21px rgba(0, 0, 0, 0.09);
+    padding-bottom: 24px;
+
+}
+
+.subscribe {
+    margin-top: 50px;
+}
+
+.subscribe__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.subscribe__field {
+    width: 77%;
+    font-family: Panton;
+    color: #6f6f6f;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #fff;
+    padding: 22px 32px;
+    box-sizing: border-box;
+
+}
+
+.subscribe-form {
+    box-shadow: 0 9px 21px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.subscribe-form .buy-btn {
+    width: 22.98%;
+}
+
+.subscriber {
+    display: flex;
+
 }
