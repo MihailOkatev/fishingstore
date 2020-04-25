@@ -87,7 +87,9 @@ button {
     margin-right: 0;
 }
 .container {
-    width: 1140px;
+    max-width: 1140px;
+    min-width: 800px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -143,7 +145,7 @@ button {
     padding: 0 25px;
     height: 42px;
     border: 1px solid #DDDDDD;
-    background-image: url("./img/search.jpg");
+    background-image: url(./img/search.jpg);
     background-position: right 19px center;
     background-repeat: no-repeat;
     font-family: Panton;
@@ -355,7 +357,7 @@ button {
 .special-offer__img {
     display: block;
     position: absolute;
-    right: 83px;
+    right: calc(50% - 26.5vw);
     top: -21px;
 }
 
@@ -369,6 +371,7 @@ button {
 .offer-cards__item {
     width: 30.93%;
     background: linear-gradient(to right,#048AC3, #37BDEC);
+    padding-bottom: 15px;
 
 
 }
@@ -401,7 +404,6 @@ button {
     background-position: center;
     display: block;
     background-repeat: no-repeat;
-    padding-bottom: 21px;
     margin-top: 11px;
 }
 
@@ -781,4 +783,202 @@ button {
 .subscriber {
     display: flex;
 
+}
+
+.discount-sale {
+    margin-top: 101px;
+}
+
+.discount-sale__card {
+    width: 48.68%;
+    background: linear-gradient(to right, #048AC3, #37BDEC);
+    position: relative;
+    padding-bottom: 40px;
+
+
+}
+
+.discount-sale__title {
+    margin-top: 0;
+    padding-left: 36px;
+    padding-top: 38px;
+    padding-bottom: 9px;
+}
+
+.discount-sale__heading {
+    display: block;
+    font-weight: 800;
+    font-size: 48px;
+    color: #FFFFFF;
+    letter-spacing: 1.2px;
+}
+
+.discount-sale__end-date {
+    font-weight: 600;
+    font-size: 22px;
+    color: #5DD5FE;
+    position: absolute;
+    top: 60px;
+    left: 42.909%;
+}
+
+.discount-sale__procent {
+    position: absolute;
+    font-size: 95px;
+    font-weight: 800;
+    color: #FFFFFF;
+    opacity: 0.22;
+    top: 160px;
+    left: 25.2727%;
+}
+
+.discount-sale__card .offer-card__open {
+    width: 36.5px;
+    height: 36.5px;
+    background-size: 36px;
+    margin-left: 50px;
+    background-position: 0 0;
+    margin-top: 35px;
+}
+
+.discount__photo {
+    position: absolute;
+    top: -28px;
+    left: 51.8181%;
+    height: 297px;
+    display: inline;
+}
+
+.discount__photo img {
+}
+
+.discount-sale {
+    display: flex;
+    justify-content: space-between;
+}
+
+.katushka-card .discount__photo {
+    position: absolute;
+    top: 24px;
+    left: 61.8181%;
+    height: 297px;
+    display: inline;
+}
+
+.about {
+    margin-top: 93px;
+    margin-bottom: 52px;
+
+}
+
+.about__content {
+    color: #1d1e1e;
+    line-height: 25px;
+    font-size: 14px;
+    letter-spacing: 0.33px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+}
+
+.about__side-block {
+    width: 48.3333%;
+}
+
+.footer {
+    margin-top: 91px;
+    background-color: #1D1E1E;
+    padding-top: 63px;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.footer-content__logotype {
+    color: #6d6d6d;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 4.5px;
+    margin-top: 0;
+}
+
+.footer-content__logo {
+    text-transform: uppercase;
+}
+
+.footer-content__type {
+    margin-left: -10px;
+}
+
+.footer-content__subtitle {
+    font-weight: 600;
+    font-size: 13px;
+    color: #FFFFFF;
+    display: block;
+    width: 76.3%;
+    opacity: 0.5;
+}
+
+.footer-linkblock__item {
+    font-size: 14px;
+    font-weight: 700;
+    color: #009BE1;
+    display: block;
+}
+
+.footer-linkblock__item:first-child {
+    margin-bottom: 18px;
+}
+
+.footer__section-heading {
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.footer__menu-link {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.footer-menu__item {
+    margin-bottom: 13px;
+}
+
+.footer__footer-menu {
+    margin-left: 128px;
+    margin-top: -10px;
+    display: flex;
+}
+
+nav .footer-menu__item:last-child, address .footer-menu__item:last-child {
+    margin-bottom: 0;
+}
+
+.for-buyers {
+    margin-left: 112px;
+}
+
+.b2b .footer-menu__item {
+    font-size: 12px;
+}
+
+.e-mail-link {
+    text-transform: lowercase;
+    color: #009add;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+address {
+    font-style: normal;
+}
+
+.b2b {
+    margin-left: 129px;
 }
