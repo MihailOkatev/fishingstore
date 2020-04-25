@@ -279,7 +279,31 @@ button {
     display: block;
     background-color: #EFEFEF;
     margin-bottom: 1px;
+    position: relative;
 }
+
+.sidebar-menu__item::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image: url("./img/ps1.png");
+    top: 10px;
+    left: 20px;
+    background-repeat: no-repeat;
+}
+
+.sidebar-menu__item::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url("./img/ps2.png");
+    top: 8px;
+    right: 12px;
+    background-repeat: no-repeat;
+}
+
 .main-content {
     display: flex;
     justify-content: space-between;
